@@ -1,0 +1,54 @@
+body {
+  background: #020617;
+}
+
+/* Logo Icone */
+.logo-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #22d3ee, #22c55e);
+  font-weight: 800;
+  font-size: 16px;
+  color: #020617;
+}
+
+/* Card de saldo */
+.saldo-card {
+  background: #1b2537;          /* 1 - fundo */
+  border: 1px solid #273244;    /* 2 - borda */
+  border-radius: 16px;          /* 3 - arredondamento */
+  padding: 20px;
+  color: #d0d6e1;
+}
+/* Card de Cartão de Crédito */
+.credit-card {
+  background: #1f383f;          /* 1 - fundo */
+  border: 1px solid #1f383f;    /* 2 - borda */
+  border-radius: 16px;          /* 3 - arredondamento */
+  padding: 20px;
+  color: #d8dde6;
+}
+
+.saldo-valor {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Cores dos Textos */
+.text-pastel-green { color: #8efac7; }
+.text-pastel-red   { color: #ffb3b3; }
+.text-pastel-blue  { color: #a7c7ff; }
+.text-pastel-yellow{ color: #ffe9a3; }
+
+
+
+/* Deixa os cards um pouco mais arredondados */
+.card {
+  border-radius: 16px;
+}
+
+/* Links do menu */
+header a:hover {
+  color: #a5b4fc !important;
+}

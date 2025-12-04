@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>BitBank - Fintech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark text-light">
+
+  <!-- Topo -->
+  <header class="py-3 border-bottom border-secondary mb-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-2">
+        <div class="logo-icon d-flex align-items-center justify-content-center">
+          BB
+        </div>
+        <span class="fs-5 fw-semibold">BitBank</span>
+      </div>
+      <nav class="d-flex align-items-center gap-3">
+        <a href="#" class="text-decoration-none text-light small">Início</a>
+        <a href="#" class="text-decoration-none text-light small">Cartões</a>
+        <a href="#" class="text-decoration-none text-light small">Movimentação</a>
+        <button class="btn btn-outline-light btn-sm rounded-pill px-3">
+          Sair
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container pb-5">
+    <div class="row g-4">
+
+      <!-- Coluna esquerda -->
+      <section class="col-lg-6">
+        <h1 class="fs-3 mb-2">Olá, Paulo 👋</h1>
+        <p class="text-secondary small mb-4">
+          Bem-vindo à sua conta digital BitBank. Acompanhe seu saldo, últimas movimentações
+          em poucos cliques.
+        </p>
+        
+        <!-- Card de saldo -->
+        <div class="card saldo-card mb-3 border-0">
+          <div class="card-body">
+            <p class="text-uppercase text-secondary small mb-1">
+              Saldo disponível
+        
+        <!-- Troca text-pastel-green por text-pastel-red se estiver usando limite -->
+        <p class="saldo-valor mb-2 text-pastel-green">R$ 12.450,90</p>
+
+        <div class="d-flex flex-column gap-1 small">
+         <div class="d-flex justify-content-between">
+          <span class="text-secondary">Valor do limite</span>
+
+          <!-- Limite sempre em vermelho pastel -->
+          <span class="text-pastel-red">R$ 5.000,00</span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span class="text-secondary">Valor em conta</span>
+
+          <!-- Saldo em conta azul pastel -->
+        <span class="text-pastel-blue">R$ 7.450,90</span>
+           </div>
+          </div>
+         </div>
+        </div>
+
+         <!-- Card do Cartão de Crédito-->
+     <div class="card credit-card-secondary mb-3 credit-card">
+      <div class="card-body">
+        <p class="text-uppercase text-secondary small mb-2">
+        Cartão de crédito
+       </p>
+
+      <div class="d-flex justify-content-between align-items-baseline mb-2">
+        <span class="text-secondary small">Valor atual da fatura</span>
+        <span class="fw-semibold text-pastel-red">R$ 1.230,55</span>
+      </div>
+
+      <div class="small d-flex justify-content-between mb-1">
+        <span class="text-secondary">Limite</span>
+        <span class="text-pastel-blue">R$ 8.000,00</span>
+      </div>
+
+      <div class="small d-flex justify-content-between mb-1">
+        <span class="text-secondary">Melhor data de compra</span>
+        <span class="text-light">10</span>
+      </div>    
+      
+       <div class="small d-flex justify-content-between mb-1">
+        <span class="text-secondary">Data de fechamento</span>
+        <span class="text-light">15</span>
+      </div>
+
+      <div class="small d-flex justify-content-between">
+        <span class="text-secondary">Status da fatura</span>
+        <span class="text-pastel-yellow">Em aberto</span>
+       </div>
+     </div>
+    </div>
+
+        <!-- Botões de ação -->
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-primary rounded-pill px-4">
+            Transferir
+          </button>
+          <button class="btn btn-outline-light rounded-pill px-4">
+            Pagar boleto
+          </button>
+        </div>
+      </section>
+
+      <!-- Coluna direita -->
+      <section class="col-lg-6">
+
+        <!-- Últimas movimentações -->
+        <div class="card bg-dark border-secondary mb-3">
+          <div class="card-header border-secondary py-2">
+            <span class="small text-secondary text-uppercase">Últimas movimentações</span>
+          </div>
+          <div class="card-body p-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <strong class="small d-block">PIX recebido</strong>
+                <span class="text-secondary small">Cliente SPI Sistemas</span>
+              </div>
+              <span class="text-success small fw-semibold">+ R$ 2.500,00</span>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <strong class="small d-block">Pagamento cartão</strong>
+                <span class="text-secondary small">Fatura crédito</span>
+              </div>
+              <span class="text-warning small fw-semibold">- R$ 980,35</span>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <strong class="small d-block">TED enviada</strong>
+                <span class="text-secondary small">CSN Volta Redonda</span>
+              </div>
+              <span class="text-warning small fw-semibold">- R$ 1.200,00</span>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <strong class="small d-block">Salário</strong>
+                <span class="text-secondary small">SPI Integração de Sistemas</span>
+              </div>
+              <span class="text-success small fw-semibold">+ R$ 8.900,00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movimentações Últimos 4 meses -->
+        <div class="card bg-dark border-secondary mb-3">
+          <div class="card-header border-secondary py-2">
+            <span class="small text-secondary text-uppercase">Movimentação Últimos 4 meses</span>
+          </div>
+             
+          <div class="card-body p-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <strong class="small d-block">Outubro</strong>
+                <span class="text-secondary small">Outubro 2025</span>
+              </div>
+              <span class="text-success small fw-semibold">+ R$ 10.500,00</span>
+            </div> 
+                
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div>
+             <strong class="small d-block">Setembro</strong>
+             <span class="text-secondary small">Setembro 2025</span>
+            </div>
+             <span class="text-success small fw-semibold">+ R$ 9800,35</span>
+          </div>
+        
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div>
+             <strong class="small d-block">Agosto</strong>
+             <span class="text-secondary small">Agosto 2025</span>
+            </div>
+             <span class="text-danger small fw-semibold">- R$ 2800,77</span>
+          </div>    
+          
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div>
+             <strong class="small d-block">Julho</strong>
+             <span class="text-secondary small">Julho 2025</span>
+            </div>
+             <span class="text-danger small fw-semibold">- R$ 5300,99</span>
+          </div>
+        </div>     
+     <section>
+   <div>
+ </main>    
+
+   <!-- Rodapé -->
+  <footer class="border-top border-secondary py-2">
+   <div class="container text-center">
+      <span class="text-secondary small">
+     BiteBank · Projeto acadêmico Fintech · FIAP · 2025
+      </span>
+   </div>
+  </footer>
+
+</body>
+</html>
